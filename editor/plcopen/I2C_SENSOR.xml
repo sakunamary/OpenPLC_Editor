@@ -18,65 +18,30 @@
     <dataTypes/>
     <pous>
       <pou name="I2C_THREMO_4_OUT" pouType="functionBlock">
-              <interface>
+        <interface>
           <inputVars>
-            <variable name="ADDR_SLAVE">
-              <type>
-                <INT/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[I2C module  address ]]></xhtml:p>
-              </documentation>
+            <variable name="ADDR_SLAVE"><type><INT/></type>
+              <documentation><xhtml:p><![CDATA[I2C module  address ]]></xhtml:p></documentation>
             </variable>
-                <variable name="SCK_PIN">
-              <type>
-                <INT/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[I2C module  SCK PIN ]]></xhtml:p>
-              </documentation>
+            <variable name="SCK_PIN"><type><INT/></type>
+              <documentation><xhtml:p><![CDATA[I2C module  SCK PIN ]]></xhtml:p></documentation>
             </variable>
-            <variable name="SDA_PIN">
-              <type>
-                <INT/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[I2C module  SDA PIN ]]></xhtml:p>
-              </documentation>
+            <variable name="SDA_PIN"><type><INT/></type>
+              <documentation><xhtml:p><![CDATA[I2C module  SDA PIN ]]></xhtml:p></documentation>
             </variable>
-          </inputVars>
-          <outputVars>
-            <variable name="OUT_0">
-              <type>
-                <REAL/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p>
-              </documentation>
+        </inputVars>
+        <outputVars>
+            <variable name="OUT_0"><type><REAL/></type>
+              <documentation><xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p></documentation>
             </variable>
-            <variable name="OUT_1">
-              <type>
-                <REAL/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p>
-              </documentation>
+            <variable name="OUT_1"><type><REAL/></type>
+              <documentation><xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p></documentation>
             </variable>
-            <variable name="OUT_2">
-              <type>
-                <REAL/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p>
-              </documentation>
+            <variable name="OUT_2"><type><REAL/></type>
+              <documentation><xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p></documentation>
             </variable>
-            <variable name="OUT_3">
-              <type>
-                <REAL/>
-              </type>
-              <documentation>
-                <xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p>
-              </documentation>
+            <variable name="OUT_3"><type><REAL/></type>
+              <documentation><xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p></documentation>
             </variable>
           </outputVars>
         </interface>
@@ -89,12 +54,10 @@
           <xhtml:p><![CDATA[Reads temperature from I2C module]]></xhtml:p>
         </documentation>
       </pou>
-    </pous>
-    <pous>
+
       <pou name="I2C_AHT20" pouType="functionBlock">
         <interface>
           <inputVars>
-            </variable>
             <variable name="SCK_PIN">
               <type>
                 <INT/>
