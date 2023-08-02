@@ -58,7 +58,7 @@ static void I2C_AHT20_init__(I2C_AHT20 *data__, BOOL retain) {
   __INIT_VAR(data__->ENO,__BOOL_LITERAL(TRUE),retain)
   __INIT_VAR(data__->SCK_PIN,0,retain)
   __INIT_VAR(data__->SDA_PIN,0,retain)  
-  __INIT_VAR(data__->temp_vt,0.0,retain)
+  __INIT_VAR(data__->TEMP,0.0,retain)
   __INIT_VAR(data__->RH,0.0,retain)
 
 }
