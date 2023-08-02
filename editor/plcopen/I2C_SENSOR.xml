@@ -28,7 +28,7 @@
                 <xhtml:p><![CDATA[I2C module  address ]]></xhtml:p>
               </documentation>
             </variable>
-                        <variable name="SCK_PIN">
+                <variable name="SCK_PIN">
               <type>
                 <INT/>
               </type>
@@ -90,9 +90,9 @@
         </documentation>
       </pou>
     </pous>
-        <pous>
+    <pous>
       <pou name="I2C_AHT20" pouType="functionBlock">
-              <interface>
+        <interface>
           <inputVars>
             </variable>
             <variable name="SCK_PIN">
