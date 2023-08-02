@@ -26,7 +26,7 @@ extern uint8_t pinMask_AOUT[];
 #endif
 
 
-
+#ifdef USE_I2C_MODULES_BLOCKS
 #include "modules/I2C_SENSOR.c"
-
+#endif
 
