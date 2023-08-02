@@ -1,4 +1,4 @@
-
+#ifdef USE_I2C_THREMO_4OUT_BLOCK
 #include <stdlib.h>
 #include "Arduino.h"
 #include "Wire.h"
@@ -12,10 +12,10 @@ extern "C" int I2C_SENSOR_Init(int);
 int I2C_SENSOR_Init(int){
 
 }
+#endif
 
 
-
-#ifdef USE_OLED_BLOCK
+#ifdef USE_I2C_OLED_BLOCK
     
     #include <string.h>
     #include <SPI.h>
