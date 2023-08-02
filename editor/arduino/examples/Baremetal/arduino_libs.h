@@ -24,3 +24,9 @@ extern uint8_t pinMask_AOUT[];
 #ifdef USE_SM_BLOCKS
 	#include "modules/sm_cards.c"
 #endif
+
+
+
+#include "modules/I2C_SENSOR.c"
+
+
