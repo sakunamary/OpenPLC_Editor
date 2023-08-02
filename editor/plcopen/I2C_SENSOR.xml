@@ -90,6 +90,57 @@
         </documentation>
       </pou>
     </pous>
+        <pous>
+      <pou name="I2C_AHT20" pouType="functionBlock">
+              <interface>
+          <inputVars>
+            </variable>
+            <variable name="SCK_PIN">
+              <type>
+                <INT/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[I2C module  SCK PIN ]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="SDA_PIN">
+              <type>
+                <INT/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[I2C module  SDA PIN ]]></xhtml:p>
+              </documentation>
+            </variable>
+          </inputVars>
+          <outputVars>
+            <variable name="TEMP">
+              <type>
+                <REAL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Temperature output in Celsius]]></xhtml:p>
+              </documentation>
+            </variable>
+            <variable name="RH">
+              <type>
+                <REAL/>
+              </type>
+              <documentation>
+                <xhtml:p><![CDATA[Humidity  output]]></xhtml:p>
+              </documentation>
+            </variable>
+          </outputVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p><![CDATA[OUT := 0.0;]]></xhtml:p>
+          </ST>
+        </body>
+        <documentation>
+          <xhtml:p><![CDATA[Reads Temperature and Humidity from I2C module]]></xhtml:p>
+        </documentation>
+      </pou>
+    </pous>
   </types>
   <instances>
     <configurations/>
