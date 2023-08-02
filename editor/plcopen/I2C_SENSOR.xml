@@ -54,7 +54,42 @@
           <xhtml:p><![CDATA[Reads temperature from I2C module]]></xhtml:p>
         </documentation>
       </pou>
+      <pou name="I2C_OLED" pouType="functionBlock">
+        <interface>
+          <inputVars>
+            <variable name="LINE1"><type><string/></type>
+              <documentation>
+                <xhtml:p><![CDATA[Text on the OLED display]]></xhtml:p>
+              </documentation>            
+            </variable>
+            <variable name="LINE2"><type><string/></type>
+              <documentation>
+                <xhtml:p><![CDATA[Text on the OLED display]]></xhtml:p>
+              </documentation>            
+            </variable>
+            <variable name="LINE3"><type><string/></type>
+              <documentation>
+                <xhtml:p><![CDATA[Text on the OLED display]]></xhtml:p>
+              </documentation>            
+            </variable>
+            <variable name="LINE4"><type><string/></type>
+              <documentation>
+                <xhtml:p><![CDATA[Text on the OLED SSD1306 display]]></xhtml:p>
+              </documentation>            
+            </variable>
 
+          </inputVars>
+
+        </interface>
+        <body>
+          <ST>
+            <xhtml:p><![CDATA[MSG := MSG;]]></xhtml:p>
+          </ST>  
+        </body>
+        <documentation>
+          <xhtml:p><![CDATA[Dislpays a message on the OLD connected to I2C(GPIO0,GPIO1)]]></xhtml:p>
+        </documentation>
+      </pou>
       <pou name="I2C_AHT20" pouType="functionBlock">
         <interface>
           <inputVars>
@@ -103,6 +138,7 @@
           <xhtml:p><![CDATA[Reads Temperature and Humidity from I2C module]]></xhtml:p>
         </documentation>
       </pou>
+      
     </pous>
   </types>
   <instances>
