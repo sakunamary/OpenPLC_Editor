@@ -232,6 +232,7 @@ def build(st_file, platform, source_file, port, txtCtrl, update_subsystem):
         # Setup boards - remove 3rd party boards to re-add them later since we don't know if they're there or not
         compiler_logs += runCommand(
             cli_command + ' config remove board_manager.additional_urls \
+https://raw.githubusercontent.com/dbuezas/lgt8fx/master/package_lgt8fx_index.json \
 https://arduino.esp8266.com/stable/package_esp8266com_index.json \
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json \
 https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json \
@@ -246,6 +247,7 @@ https://raw.githubusercontent.com/VEA-SRL/IRUINO_Library/main/package_vea_index.
         # Setup boards - add 3rd party boards
         compiler_logs += runCommand(
             cli_command + ' config add board_manager.additional_urls \
+https://raw.githubusercontent.com/dbuezas/lgt8fx/master/package_lgt8fx_index.json \
 https://arduino.esp8266.com/stable/package_esp8266com_index.json \
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json \
 https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json \
