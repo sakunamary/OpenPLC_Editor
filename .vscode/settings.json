@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "i2c_sensor.c": "cpp"
+        "i2c_sensor.c": "cpp",
+        "cstdint": "c"
     }
 }
