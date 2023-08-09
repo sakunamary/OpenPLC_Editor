@@ -27,7 +27,8 @@
 //Arduino Libraries
 //#define USE_MQTT_BLOCKS
 
-#define USE_OLED_BLOCK
+#define USE_I2C_OLED_BLOCK
+#define USE_I2C_AHT20
 
 
 //Pin Array Sizes
