@@ -13,8 +13,9 @@
         Adafruit_AHTX0 *aht;
         TwoWire CustomI2C_aht20(0, 1);
         delay(50);    
-        ahth =new aht;
+        aht =new aht;
         aht->begin(&CustomI2C_aht20);
+        dalay(100);
         return aht;
     }        
 
