@@ -25,7 +25,9 @@
 
 
 //Arduino Libraries
-#define USE_MQTT_BLOCKS
+//#define USE_MQTT_BLOCKS
+
+#define USE_OLED_BLOCK
 
 
 //Pin Array Sizes
